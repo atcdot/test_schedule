@@ -1,0 +1,27 @@
+{% extends '::base.html.twig' %}
+{% block content %}
+    <h3>Список регионов</h3>
+    <div class="row">
+        <div class="col-md-12 controls">
+            <a href="{{ path('region_create') }}" class="btn btn-default flex-right">Добавить регион</a>
+        </div>
+    </div>
+    <table class="table center table-bordered dataTables">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Название региона</th>
+            <th>Длительность поездки (туда/обратно, дней)</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for region in regions %}
+            <tr>
+                <td>{{ region.id }}</td>
+                <td>{{ region.name }}</td>
+                <td>{{ region.travelTime }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

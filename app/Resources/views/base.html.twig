@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Расписание поездок курьеров в регионы.{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('css/vendor.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+<div class="side-menu">
+    {% include 'sideMenu.html.twig' %}
+</div>
+<div class="content">
+    <div class="row">
+        {% for label, flashes in app.session.flashbag.all %}
+            {% for flash in flashes %}
+                <div class="col-lg-12 flash-message">
+                    <div class="text-center main-alert main-alert alert-{{ label }}">
+                        <span class="closeFlashMessage"><i class="fa fa-times"></i></span>
+                        {{ flash }}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+    {% block content %}{% endblock %}
+</div>
+<script src="{{ asset('js/vendor.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

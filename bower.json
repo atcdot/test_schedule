@@ -1,0 +1,26 @@
+{
+  "name": "courierSchedule",
+  "homepage": "later",
+  "authors": [
+    "Bohdan Molodkovets <mrbohdan@gmail.com>"
+  ],
+  "description": "test task",
+  "main": "web/index.php",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.1.0",
+    "bootstrap": "~3.3.7",
+    "font-awesome": "fontawesome#~4.6.3",
+    "bootstrap-datepicker": "^1.6.4",
+    "moment": "^2.14.1",
+    "datatables": "^1.10.12"
+  }
+}

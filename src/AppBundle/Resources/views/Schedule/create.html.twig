@@ -1,0 +1,27 @@
+{% extends '::base.html.twig' %}
+{% block content %}
+    <h3>Добавление новой поездки</h3>
+    <div class="row">
+        <div class="col-md-12">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_row(form.region) }}
+            {{ form_row(form.departureDate) }}
+            {{ form_row(form.courier) }}
+            <div class="form-group">
+                <label class="col-sm-2 control-label required">Дата прибытия в регион:</label>
+                <div class="col-sm-10">
+                    <span id="arrival" style="line-height: 34px"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default pull-right">Добавить</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        testApp.scheduleCreate.init('{{ path('get_courier_busy_dates') }}', '{{ path('get_region_travel_time') }}');
+    </script>
+{% endblock %}

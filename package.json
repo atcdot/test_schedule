@@ -1,0 +1,35 @@
+{
+  "name": "courier_schedule",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "web/index.php",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "later"
+  },
+  "author": "Bohdan Molodkovets <mrbohdan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.14.0",
+    "cssnano": "^3.7.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^2.0.0",
+    "stylus": "^0.54.5",
+    "tiny-lr": "^0.2.1"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,4 @@
+services:
+  app.service.schedule_service:
+      class: AppBundle\Service\ScheduleService
+      arguments: ['@doctrine.orm.entity_manager']

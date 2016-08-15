@@ -1,0 +1,49 @@
+{% extends '::base.html.twig' %}
+{% block content %}
+    <h3>Список поездок</h3>
+
+    <div class="row">
+        <div class="col-md-12 controls">
+            <a href="{{ path('schedule_create') }}" class="btn btn-default flex-right">Добавить поездку</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="filter" class="form-horizontal">
+                <label class="col-sm-2 control-label" for="periodBlock">Период поездок</label>
+                <div id="periodBlock" class="col-sm-10">
+                    <div class="col-md-3 form-group">
+                        <label class="col-sm-2 control-label" for="dateFrom">От</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="dateFrom" class="form-control filter-date-picker">
+                        </div>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label class="col-sm-2 control-label" for="dateTo">До</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="dateTo" class="form-control filter-date-picker">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="schedule" class="table center table-bordered">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Регион</th>
+            <th>Дата выезда из Москвы</th>
+            <th>Курьер</th>
+        </tr>
+        </thead>
+    </table>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $(function () {
+            testApp.scheduleList.init('{{ path('get_schedule_list') }}');
+        })
+    </script>
+{% endblock %}

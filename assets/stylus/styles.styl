@@ -1,0 +1,62 @@
+body
+  display flex
+  .side-menu
+    flex 1
+    border-right 1px solid #ddd
+    ul
+      display flex
+      flex-direction column
+      margin 0
+      padding 0
+      li
+        flex 1
+        list-style none
+        cursor pointer
+        a
+          display block
+          text-decoration none
+          padding 0.5em
+          font-size 1.2em
+          color #4c4c4c
+          &:hover
+            background #fffdcd
+            border-right 2px solid #ffb97c
+            margin-right -2px
+  .content
+    flex 6
+    padding 1em
+    margin 0 1em
+
+.controls
+  display flex
+
+.flex-right
+  margin-left auto
+
+.flash-message
+  margin-bottom 15px
+  .main-alert
+    font-size 1.1em
+    padding 10px
+    margin-bottom 1px
+    border-radius 3px
+    &.alert-error
+      color #a94442
+      background-color #f2dede
+      border-color #ebccd1
+      hr
+        border-top-color #e4b9c0
+      .alert-link
+        color #843534
+    .closeFlashMessage
+      float right
+      color #a4a4a4
+      font-size 14px
+      margin -12px -8px 0 0
+      cursor pointer
+
+.table
+  &.center
+    th,
+    td
+      text-align center
