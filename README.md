@@ -2,7 +2,7 @@
 ========================
 
 [![Travis](https://api.travis-ci.org/ggcstop/test_schedule.svg)]()
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ggcstop/test_schedule/badges/quality-score.png)]()
+[![Scrutinizer](https://img.shields.io/scrutinizer/g/ggcstop/test_schedule.svg)]()
 
 Реализовано на фреймворке Symfony 3
 
