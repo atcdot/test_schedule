@@ -1,5 +1,5 @@
 Тестовое задание
-========================
+
 [![Travis](https://api.travis-ci.org/ggcstop/test_schedule.svg)]()
 ========================
 
