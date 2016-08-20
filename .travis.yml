@@ -8,4 +8,4 @@ php:
   
 before_script: composer install --dev  
   
-script: phpunit -c app
+script: phpunit -c phpunit.xml.dist
