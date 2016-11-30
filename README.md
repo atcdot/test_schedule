@@ -16,7 +16,7 @@
 
 Для развертывания последовательно выполнить:
 
-* git clone https://github.com/ggcstop/test_schedule.git
+* git clone https://ggcstop@bitbucket.org/ggcstop/test_schedule.git
 * cd test_schedule
 * composer install
 * npm install
@@ -24,6 +24,4 @@
 * gulp build
 * php bin/console doctrine:database:create
 * php bin/console doctrine:schema:create
-* импортировать БД или сгенерировать тетовые данные командой php bin/console doctrine:fixtures:load
-
-
+* импортировать БД или сгенерировать теcтовые данные командой php bin/console doctrine:fixtures:load
