@@ -1,9 +1,6 @@
 Тестовое задание
 ========================
 
-[![Travis](https://api.travis-ci.org/ggcstop/test_schedule.svg)]()
-[![Scrutinizer](https://img.shields.io/scrutinizer/g/ggcstop/test_schedule.svg)]()
-
 Реализовано на фреймворке Symfony 3
 
 Зависимости:
